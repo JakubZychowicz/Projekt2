@@ -1,0 +1,133 @@
+:root {
+--red:rgb(110, 51, 51);
+--dark:rgb(20, 10, 10);
+
+
+}
+
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background: var(--dark);
+background: linear-gradient(to right top,var(--dark),var(--red));
+overflow: hidden;
+font-family: 'Montserrat', sans-serif;
+color:white;
+
+}
+.container {
+    display: flex;
+max-width: 1200px;
+max-height: 80vh;
+background: rgba(0, 0, 0, 0.75);
+background: linear-gradient(to right top,rgba(39, 2, 2, 0.8),rgba(56, 39, 39, 0.685) );
+padding: 32px 92px;
+border-radius: 20px;
+position: relative;
+backdrop-filter: blur(2px);
+overflow: auto;
+}
+.obsada_img{
+width: 75px;
+height: 100px;
+left: 0;
+
+
+
+}
+.bg_img{
+position: absolute;
+}
+
+.bg_img--button{
+top: 0;
+right: 60%;
+height:30vh ;
+animation: slidedown 9s linear infinite;
+}
+
+
+.bg_img--logo{
+right: 0;
+top: 50%;
+transform: translate(50%, -50%);
+width: 65%;
+opacity: 0.5;
+
+
+}
+.logo{
+width: 250px;
+margin-right:100px;
+
+}
+.logo img {
+width: 100%;
+
+}
+
+h1{
+font-size: 48px;
+padding:24px 0 12px;
+
+}
+header{
+flex:1;
+
+}
+
+p{
+font-size:  20px; ;
+font-weight: 400;
+
+
+}
+a{
+font-size:  20px;
+color: white;
+position: relative;
+text-decoration: none;
+
+
+
+}
+.link_border{
+    width: 0%;
+    height: 5px;
+position:absolute;
+top:100%;
+left:0;
+background:var(--dark);
+background: linear-gradient(90deg,transparent,var(--dark));
+transition:width 0.3s;
+}
+a:hover .link_border{
+width: 100%;
+
+}
+.bg_img--logo:hover{
+border: 20px transparent solid;
+
+
+
+
+}
+
+
+@keyframes slidedown  {
+from{transform: translateY(-30vh)}
+to {transform:translateY(100vh) ;}
+
+}
